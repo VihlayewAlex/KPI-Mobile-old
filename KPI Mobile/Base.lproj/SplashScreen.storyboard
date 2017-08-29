@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q6W-LZ-vR3">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="RiQ-uV-l3f">
+            <objects>
+                <viewController id="Q6W-LZ-vR3" customClass="SplashScreenViewController" customModule="KPI_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r6a-Fr-Scl"/>
+                        <viewControllerLayoutGuide type="bottom" id="BcV-gF-Fvy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahp-k8-CRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashScreenBg" translatesAutoresizingMaskIntoConstraints="NO" id="Cgd-tu-cvV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocw-o0-L83">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Enh-db-0Ki">
+                                        <rect key="frame" x="72" y="166.5" width="176.5" height="235"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="blg-9f-XVD">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="176.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="blg-9f-XVD" secondAttribute="height" multiplier="1:1" id="6yf-WR-ali"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KPI Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i23-Ly-Puk">
+                                                <rect key="frame" x="13" y="196.5" width="150.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Enh-db-0Ki" firstAttribute="centerY" secondItem="ocw-o0-L83" secondAttribute="centerY" id="Z5M-gW-npE"/>
+                                    <constraint firstItem="Enh-db-0Ki" firstAttribute="centerX" secondItem="ocw-o0-L83" secondAttribute="centerX" id="hgj-PV-zTY"/>
+                                    <constraint firstItem="Enh-db-0Ki" firstAttribute="width" secondItem="ocw-o0-L83" secondAttribute="width" multiplier="0.55" id="vc1-ot-iJW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cgd-tu-cvV" firstAttribute="top" secondItem="ahp-k8-CRJ" secondAttribute="top" id="Aow-Yh-VFh"/>
+                            <constraint firstAttribute="trailing" secondItem="Cgd-tu-cvV" secondAttribute="trailing" id="How-uX-MF3"/>
+                            <constraint firstItem="ocw-o0-L83" firstAttribute="top" secondItem="ahp-k8-CRJ" secondAttribute="top" id="QXt-oi-saI"/>
+                            <constraint firstItem="BcV-gF-Fvy" firstAttribute="top" secondItem="ocw-o0-L83" secondAttribute="bottom" id="R1G-8X-uLV"/>
+                            <constraint firstItem="BcV-gF-Fvy" firstAttribute="top" secondItem="Cgd-tu-cvV" secondAttribute="bottom" id="b4j-tF-ZJw"/>
+                            <constraint firstItem="Cgd-tu-cvV" firstAttribute="leading" secondItem="ahp-k8-CRJ" secondAttribute="leading" id="oab-H3-FbV"/>
+                            <constraint firstItem="ocw-o0-L83" firstAttribute="leading" secondItem="ahp-k8-CRJ" secondAttribute="leading" id="ue2-QO-bMv"/>
+                            <constraint firstAttribute="trailing" secondItem="ocw-o0-L83" secondAttribute="trailing" id="unq-ug-F8J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="sTk-Gv-uwY" kind="show" identifier="scheduleSegue" id="eYk-2g-Vpu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOd-GX-99U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-737" y="37"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="1qg-xw-hMb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Schedule" id="sTk-Gv-uwY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tR0-xH-di9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="500" height="500"/>
+        <image name="splashScreenBg" width="616" height="483"/>
+    </resources>
+</document>

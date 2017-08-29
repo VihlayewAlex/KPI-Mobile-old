@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1A4A4D1F55DFE6000FB8DA /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1A4A4C1F55DFE6000FB8DA /* Schedule.storyboard */; };
+		3A1A4A4F1F55E00A000FB8DA /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A4E1F55E00A000FB8DA /* ScheduleViewController.swift */; };
+		3A1A4A541F55E5A0000FB8DA /* ScheduleViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A531F55E5A0000FB8DA /* ScheduleViewController+DataSource.swift */; };
+		3A1A4A561F55E5B3000FB8DA /* ScheduleViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A551F55E5B3000FB8DA /* ScheduleViewController+Delegate.swift */; };
+		3A1A4A581F55E690000FB8DA /* ScheduleModuleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A571F55E690000FB8DA /* ScheduleModuleController.swift */; };
+		3A1A4A5A1F55EA81000FB8DA /* ScheduleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A591F55EA81000FB8DA /* ScheduleViewProtocol.swift */; };
+		3A1A4A5C1F55EEC4000FB8DA /* ScheduleWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A5B1F55EEC4000FB8DA /* ScheduleWeek.swift */; };
+		3A1A4A5E1F55EF16000FB8DA /* ScheduleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A5D1F55EF16000FB8DA /* ScheduleDay.swift */; };
+		3A1A4A601F55F5EE000FB8DA /* ScheduleModuleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A5F1F55F5EE000FB8DA /* ScheduleModuleDataManager.swift */; };
+		3A1A4A641F55F76D000FB8DA /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A631F55F76D000FB8DA /* Lesson.swift */; };
+		3A1A4A661F55F80A000FB8DA /* Discipline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A651F55F80A000FB8DA /* Discipline.swift */; };
+		3A1A4A681F55F877000FB8DA /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A671F55F877000FB8DA /* Group.swift */; };
+		3A1A4A6A1F55F8C1000FB8DA /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A691F55F8C1000FB8DA /* Teacher.swift */; };
+		3A1A4A6C1F55FCF0000FB8DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A6B1F55FCF0000FB8DA /* Room.swift */; };
+		3A1A4A6E1F55FD28000FB8DA /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A6D1F55FD28000FB8DA /* Building.swift */; };
+		3A1A4A701F5602E8000FB8DA /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A6F1F5602E8000FB8DA /* LessonTableViewCell.swift */; };
+		3A1A4A721F560430000FB8DA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A711F560430000FB8DA /* Config.swift */; };
+		3A1A4A741F56055A000FB8DA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A731F56055A000FB8DA /* Schedule.swift */; };
+		3A1A4A771F560699000FB8DA /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A761F560699000FB8DA /* ScheduleService.swift */; };
+		3A1A4A7A1F56085A000FB8DA /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A791F56085A000FB8DA /* APIServiceError.swift */; };
+		3A1A4A7C1F56091A000FB8DA /* ScheduleJSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A7B1F56091A000FB8DA /* ScheduleJSONSerializer.swift */; };
+		3A5FB3D21F463384000B7AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D11F463384000B7AA4 /* AppDelegate.swift */; };
+		3A5FB3D71F463384000B7AA4 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D51F463384000B7AA4 /* SplashScreen.storyboard */; };
+		3A5FB3DA1F463384000B7AA4 /* KPI_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D81F463384000B7AA4 /* KPI_Mobile.xcdatamodeld */; };
+		3A5FB3DC1F463384000B7AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3DB1F463384000B7AA4 /* Assets.xcassets */; };
+		3A5FB3DF1F463384000B7AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3DD1F463384000B7AA4 /* LaunchScreen.storyboard */; };
+		3A5FB3F21F46AF96000B7AA4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3F11F46AF96000B7AA4 /* SplashScreenViewController.swift */; };
+		7CCF6B939E561EAB57D97BEC /* Pods_KPI_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A4FFAE569CA6838DD8070A /* Pods_KPI_Mobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1A4A4C1F55DFE6000FB8DA /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		3A1A4A4E1F55E00A000FB8DA /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		3A1A4A531F55E5A0000FB8DA /* ScheduleViewController+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScheduleViewController+DataSource.swift"; sourceTree = "<group>"; };
+		3A1A4A551F55E5B3000FB8DA /* ScheduleViewController+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScheduleViewController+Delegate.swift"; sourceTree = "<group>"; };
+		3A1A4A571F55E690000FB8DA /* ScheduleModuleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleModuleController.swift; sourceTree = "<group>"; };
+		3A1A4A591F55EA81000FB8DA /* ScheduleViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewProtocol.swift; sourceTree = "<group>"; };
+		3A1A4A5B1F55EEC4000FB8DA /* ScheduleWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleWeek.swift; sourceTree = "<group>"; };
+		3A1A4A5D1F55EF16000FB8DA /* ScheduleDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDay.swift; sourceTree = "<group>"; };
+		3A1A4A5F1F55F5EE000FB8DA /* ScheduleModuleDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleModuleDataManager.swift; sourceTree = "<group>"; };
+		3A1A4A631F55F76D000FB8DA /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		3A1A4A651F55F80A000FB8DA /* Discipline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discipline.swift; sourceTree = "<group>"; };
+		3A1A4A671F55F877000FB8DA /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		3A1A4A691F55F8C1000FB8DA /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		3A1A4A6B1F55FCF0000FB8DA /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		3A1A4A6D1F55FD28000FB8DA /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		3A1A4A6F1F5602E8000FB8DA /* LessonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		3A1A4A711F560430000FB8DA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		3A1A4A731F56055A000FB8DA /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		3A1A4A761F560699000FB8DA /* ScheduleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		3A1A4A791F56085A000FB8DA /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		3A1A4A7B1F56091A000FB8DA /* ScheduleJSONSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleJSONSerializer.swift; sourceTree = "<group>"; };
+		3A5FB3CE1F463384000B7AA4 /* KPI Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KPI Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5FB3D11F463384000B7AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A5FB3D61F463384000B7AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
+		3A5FB3D91F463384000B7AA4 /* KPI_Mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KPI_Mobile.xcdatamodel; sourceTree = "<group>"; };
+		3A5FB3DB1F463384000B7AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5FB3DE1F463384000B7AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A5FB3E01F463384000B7AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5FB3F11F46AF96000B7AA4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		64A4FFAE569CA6838DD8070A /* Pods_KPI_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40433E95DB62955C99A3194 /* Pods-KPI Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		EB45938829FC58728A73499C /* Pods-KPI Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A5FB3CB1F463384000B7AA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCF6B939E561EAB57D97BEC /* Pods_KPI_Mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19CA834B1FFCEA362B826CC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB45938829FC58728A73499C /* Pods-KPI Mobile.debug.xcconfig */,
+				A40433E95DB62955C99A3194 /* Pods-KPI Mobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A1A4A4B1F55DFBB000FB8DA /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A521F55E04D000FB8DA /* Model */,
+				3A1A4A501F55E020000FB8DA /* View */,
+				3A1A4A511F55E028000FB8DA /* Controller */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		3A1A4A501F55E020000FB8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A591F55EA81000FB8DA /* ScheduleViewProtocol.swift */,
+				3A1A4A4E1F55E00A000FB8DA /* ScheduleViewController.swift */,
+				3A1A4A531F55E5A0000FB8DA /* ScheduleViewController+DataSource.swift */,
+				3A1A4A551F55E5B3000FB8DA /* ScheduleViewController+Delegate.swift */,
+				3A1A4A6F1F5602E8000FB8DA /* LessonTableViewCell.swift */,
+				3A1A4A4C1F55DFE6000FB8DA /* Schedule.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3A1A4A511F55E028000FB8DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A571F55E690000FB8DA /* ScheduleModuleController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3A1A4A521F55E04D000FB8DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A5F1F55F5EE000FB8DA /* ScheduleModuleDataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3A1A4A611F55F756000FB8DA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A631F55F76D000FB8DA /* Lesson.swift */,
+				3A1A4A651F55F80A000FB8DA /* Discipline.swift */,
+				3A1A4A671F55F877000FB8DA /* Group.swift */,
+				3A1A4A691F55F8C1000FB8DA /* Teacher.swift */,
+				3A1A4A6B1F55FCF0000FB8DA /* Room.swift */,
+				3A1A4A6D1F55FD28000FB8DA /* Building.swift */,
+				3A1A4A731F56055A000FB8DA /* Schedule.swift */,
+				3A1A4A5B1F55EEC4000FB8DA /* ScheduleWeek.swift */,
+				3A1A4A5D1F55EF16000FB8DA /* ScheduleDay.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		3A1A4A751F56068A000FB8DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A761F560699000FB8DA /* ScheduleService.swift */,
+				3A1A4A7B1F56091A000FB8DA /* ScheduleJSONSerializer.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3A1A4A781F560847000FB8DA /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A791F56085A000FB8DA /* APIServiceError.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		3A5FB3C51F463384000B7AA4 = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3D01F463384000B7AA4 /* KPI Mobile */,
+				3A5FB3CF1F463384000B7AA4 /* Products */,
+				19CA834B1FFCEA362B826CC7 /* Pods */,
+				F5C070CBA6F1C90F8EDA278F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A5FB3CF1F463384000B7AA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3CE1F463384000B7AA4 /* KPI Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A5FB3D01F463384000B7AA4 /* KPI Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3E71F46429A000B7AA4 /* Supporting files */,
+				3A5FB3E81F4642AE000B7AA4 /* Classes */,
+				3A5FB3E61F464261000B7AA4 /* Resources */,
+			);
+			path = "KPI Mobile";
+			sourceTree = "<group>";
+		};
+		3A5FB3E61F464261000B7AA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3D81F463384000B7AA4 /* KPI_Mobile.xcdatamodeld */,
+				3A5FB3DB1F463384000B7AA4 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3A5FB3E71F46429A000B7AA4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3E01F463384000B7AA4 /* Info.plist */,
+				3A1A4A711F560430000FB8DA /* Config.swift */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		3A5FB3E81F4642AE000B7AA4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3E91F464348000B7AA4 /* Common */,
+				3A5FB3EA1F464352000B7AA4 /* Modules */,
+				3A5FB3D11F463384000B7AA4 /* AppDelegate.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3A5FB3E91F464348000B7AA4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A4A781F560847000FB8DA /* Errors */,
+				3A1A4A751F56068A000FB8DA /* Services */,
+				3A1A4A611F55F756000FB8DA /* Entity */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		3A5FB3EA1F464352000B7AA4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3EC1F4643BB000B7AA4 /* LaunchScreen */,
+				3A5FB3EB1F4643A9000B7AA4 /* SplashScreen */,
+				3A1A4A4B1F55DFBB000FB8DA /* Schedule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		3A5FB3EB1F4643A9000B7AA4 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3D51F463384000B7AA4 /* SplashScreen.storyboard */,
+				3A5FB3F11F46AF96000B7AA4 /* SplashScreenViewController.swift */,
+			);
+			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		3A5FB3EC1F4643BB000B7AA4 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A5FB3DD1F463384000B7AA4 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		F5C070CBA6F1C90F8EDA278F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A4FFAE569CA6838DD8070A /* Pods_KPI_Mobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A5FB3CD1F463384000B7AA4 /* KPI Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5FB3E31F463384000B7AA4 /* Build configuration list for PBXNativeTarget "KPI Mobile" */;
+			buildPhases = (
+				021D2E4C9AF3BDC1BCF9A120 /* [CP] Check Pods Manifest.lock */,
+				3A5FB3CA1F463384000B7AA4 /* Sources */,
+				3A5FB3CB1F463384000B7AA4 /* Frameworks */,
+				3A5FB3CC1F463384000B7AA4 /* Resources */,
+				EE8D278FFC98C4A8A32DFDDB /* [CP] Embed Pods Frameworks */,
+				E6220AC87C1B0A34604CA388 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KPI Mobile";
+			productName = "KPI Mobile";
+			productReference = 3A5FB3CE1F463384000B7AA4 /* KPI Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A5FB3C61F463384000B7AA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alex Vihlayew";
+				TargetAttributes = {
+					3A5FB3CD1F463384000B7AA4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 22U234HGU8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3A5FB3C91F463384000B7AA4 /* Build configuration list for PBXProject "KPI Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A5FB3C51F463384000B7AA4;
+			productRefGroup = 3A5FB3CF1F463384000B7AA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A5FB3CD1F463384000B7AA4 /* KPI Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A5FB3CC1F463384000B7AA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5FB3DF1F463384000B7AA4 /* LaunchScreen.storyboard in Resources */,
+				3A5FB3DC1F463384000B7AA4 /* Assets.xcassets in Resources */,
+				3A5FB3D71F463384000B7AA4 /* SplashScreen.storyboard in Resources */,
+				3A1A4A4D1F55DFE6000FB8DA /* Schedule.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		021D2E4C9AF3BDC1BCF9A120 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KPI Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6220AC87C1B0A34604CA388 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8D278FFC98C4A8A32DFDDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A5FB3CA1F463384000B7AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1A4A601F55F5EE000FB8DA /* ScheduleModuleDataManager.swift in Sources */,
+				3A1A4A5C1F55EEC4000FB8DA /* ScheduleWeek.swift in Sources */,
+				3A1A4A6C1F55FCF0000FB8DA /* Room.swift in Sources */,
+				3A1A4A561F55E5B3000FB8DA /* ScheduleViewController+Delegate.swift in Sources */,
+				3A1A4A721F560430000FB8DA /* Config.swift in Sources */,
+				3A1A4A7C1F56091A000FB8DA /* ScheduleJSONSerializer.swift in Sources */,
+				3A1A4A641F55F76D000FB8DA /* Lesson.swift in Sources */,
+				3A1A4A701F5602E8000FB8DA /* LessonTableViewCell.swift in Sources */,
+				3A5FB3DA1F463384000B7AA4 /* KPI_Mobile.xcdatamodeld in Sources */,
+				3A1A4A581F55E690000FB8DA /* ScheduleModuleController.swift in Sources */,
+				3A1A4A6E1F55FD28000FB8DA /* Building.swift in Sources */,
+				3A1A4A6A1F55F8C1000FB8DA /* Teacher.swift in Sources */,
+				3A1A4A661F55F80A000FB8DA /* Discipline.swift in Sources */,
+				3A1A4A681F55F877000FB8DA /* Group.swift in Sources */,
+				3A5FB3D21F463384000B7AA4 /* AppDelegate.swift in Sources */,
+				3A5FB3F21F46AF96000B7AA4 /* SplashScreenViewController.swift in Sources */,
+				3A1A4A541F55E5A0000FB8DA /* ScheduleViewController+DataSource.swift in Sources */,
+				3A1A4A5E1F55EF16000FB8DA /* ScheduleDay.swift in Sources */,
+				3A1A4A4F1F55E00A000FB8DA /* ScheduleViewController.swift in Sources */,
+				3A1A4A771F560699000FB8DA /* ScheduleService.swift in Sources */,
+				3A1A4A741F56055A000FB8DA /* Schedule.swift in Sources */,
+				3A1A4A5A1F55EA81000FB8DA /* ScheduleViewProtocol.swift in Sources */,
+				3A1A4A7A1F56085A000FB8DA /* APIServiceError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A5FB3D51F463384000B7AA4 /* SplashScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5FB3D61F463384000B7AA4 /* Base */,
+			);
+			name = SplashScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5FB3DD1F463384000B7AA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5FB3DE1F463384000B7AA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A5FB3E11F463384000B7AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A5FB3E21F463384000B7AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A5FB3E41F463384000B7AA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB45938829FC58728A73499C /* Pods-KPI Mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22U234HGU8;
+				INFOPLIST_FILE = "KPI Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vihlayew.KPI-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A5FB3E51F463384000B7AA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40433E95DB62955C99A3194 /* Pods-KPI Mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22U234HGU8;
+				INFOPLIST_FILE = "KPI Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "vihlayew.KPI-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A5FB3C91F463384000B7AA4 /* Build configuration list for PBXProject "KPI Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5FB3E11F463384000B7AA4 /* Debug */,
+				3A5FB3E21F463384000B7AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A5FB3E31F463384000B7AA4 /* Build configuration list for PBXNativeTarget "KPI Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5FB3E41F463384000B7AA4 /* Debug */,
+				3A5FB3E51F463384000B7AA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A5FB3D81F463384000B7AA4 /* KPI_Mobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A5FB3D91F463384000B7AA4 /* KPI_Mobile.xcdatamodel */,
+			);
+			currentVersion = 3A5FB3D91F463384000B7AA4 /* KPI_Mobile.xcdatamodel */;
+			path = KPI_Mobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A5FB3C61F463384000B7AA4 /* Project object */;
+}
