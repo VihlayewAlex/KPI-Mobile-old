@@ -14,32 +14,24 @@ class ScheduleJSONSerializer {
         var schedule = Schedule()
         
         if let data = json["data"] as? [String: Any] {
-            
             for (weekKey, weekData) in data {
                 if let week = ScheduleWeek(string: weekKey) {
                     var days = [ScheduleDay: [Lesson]]()
                     
                     if let daysDict = weekData as? [String: Any] {
-                        
                         for (dayKey, dayData) in daysDict {
                             if let day = ScheduleDay(string: dayKey) {
-                                if let dayData = dayData as? [String: Any], let daySchedule = getDaySchedule(fromJsonObject: dayData) {
-                                    
-                                    days[day] = daySchedule
-                                    
+                                if let dayData = dayData as? [String: Any], let lessons = getLessons(fromJsonObject: dayData) {
+                                    days[day] = lessons
                                 }
-                                
                             }
                         }
-                        
                     }
                     
                     schedule.weeks[week] = days
                 }
             }
-            
             return schedule
-            
         } else {
             print("Can't get json data")
         }
@@ -47,7 +39,7 @@ class ScheduleJSONSerializer {
         return nil
     }
     
-    class func getDaySchedule(fromJsonObject json: [String: Any]) -> [Lesson]? {
+    class func getLessons(fromJsonObject json: [String: Any]) -> [Lesson]? {
         var lessons = [Lesson]()
         
         for (key, value) in json {
@@ -57,20 +49,40 @@ class ScheduleJSONSerializer {
                     let disciplineData = value["discipline"] as? [String: Any],
                     let discipline = getDiscipline(fromJsonObject: disciplineData),
                     let groupsData = value["groups"] as? [[String: Any]],
-                    let groups = getGroups(fromJsonObjectsArray: groupsData) { // TODO: Add teachers and rooms
+                    let groups = getGroups(fromJsonObjectsArray: groupsData),
+                    let teachersData = value["teachers"] as? [[String: Any]],
+                    let teachers = getTeachers(fromJsonObjectsArray: teachersData),
+                    let roomsData = value["rooms"] as? [[String: Any]],
+                    let rooms = getRooms(fromJsonObjectsArray: roomsData),
+                    let type = LessonType(value: (value["type"] as? Int) ?? 0) {
                     
-                        let type = (value["type"] as? Int) ?? 0 // TODO: FIX default value for type
-                        
-                        let lesson = Lesson(lessonNumber: lessonNumber, discipline: discipline, groups: [], teachers: [], rooms: [])
+                        var lessonTime: String!
+                        switch lessonNumber {
+                        case 1:
+                            lessonTime = "8:30"
+                        case 2:
+                            lessonTime = "10:25"
+                        case 3:
+                            lessonTime = "12:20"
+                        case 4:
+                            lessonTime = "14:15"
+                        case 5:
+                            lessonTime = "16:10"
+                        case 6:
+                            lessonTime = "18:30"
+                        default:
+                            lessonTime = "?"
+                        }
+                    
+                    let lesson = Lesson(id: id, type: type, lessonNumber: lessonNumber, lessonTime: lessonTime, discipline: discipline, groups: groups, teachers: teachers, rooms: rooms)
                     lessons.append(lesson)
                     
                 }
-                
             }
         }
         
         return lessons.sorted(by: { (lhs, rhs) -> Bool in
-            lhs.lessonNumber < rhs.lessonNumber
+            return lhs.lessonNumber < rhs.lessonNumber
         })
     }
     
@@ -94,6 +106,35 @@ class ScheduleJSONSerializer {
         }
         
         return groups
+    }
+    
+    class func getTeachers(fromJsonObjectsArray jsonArr: [[String: Any]]) -> [Teacher]? {
+        var teachers = [Teacher]()
+        
+        for json in jsonArr {
+            if let id = json["id"] as? Int, let firstName = json["first_name"] as? String, let lastName = json["last_name"] as? String, let middleName = json["middle_name"] as? String, let name = json["name"] as? String, let fullName = json["full_name"] as? String, let shortName = json["short_name"] as? String, let shortNameWithDegree = json["short_name_with_degree"] as? String, let degree = json["degree"] as? String {
+                let teacher = Teacher(id: id, firstName: firstName, middleName: middleName, lastName: lastName, name: name, fullName: fullName, shortName: shortName, shortNameWithDegree: shortNameWithDegree, degree: degree)
+                teachers.append(teacher)
+            }
+        }
+        
+        return teachers
+    }
+    
+    class func getRooms(fromJsonObjectsArray jsonArr: [[String: Any]]) -> [Room]? {
+        var rooms = [Room]()
+        
+        for json in jsonArr {
+            if let roomID = json["id"] as? Int, let roomName = json["name"] as? String, let buildingData = json["building"] as? [String: Any], let buildingID = buildingData["id"] as? Int, let buildingName = buildingData["name"] as? String, let latitude = buildingData["latitude"] as? Double, let longitude = buildingData["longitude"] as? Double {
+                
+                let building = Building(id: buildingID, name: buildingName, longitude: longitude, latitude: latitude)
+                let room = Room(id: roomID, name: roomName, building: building)
+                
+                rooms.append(room)
+            }
+        }
+        
+        return rooms
     }
     
 }

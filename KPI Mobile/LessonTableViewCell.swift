@@ -23,11 +23,20 @@ class LessonTableViewCell: UITableViewCell {
     // MARK: - Properties
     var lesson: Lesson? {
         didSet {
-            if let lessonNumber = lesson?.lessonNumber {
-                lessonNumberLabel.text = String(lessonNumber)
-            }
-            lessonNameLabel.text = lesson?.discipline.name
-            // TODO: Add other data for displaying
+            guard let lesson = lesson else { return }
+            
+            lessonNumberLabel.text = String(lesson.lessonNumber) + "."
+            lessonTimeLabel.text = lesson.lessonTime
+            lessonNameLabel.text = lesson.discipline.name
+            teacherNameLabel.text = lesson.teachers.first?.shortNameWithDegree ?? ""
+            locationLabel.text = {
+                let lessonType = lesson.type.rawValue
+                var roomName = (lesson.rooms.first?.name ?? "")
+                    if roomName == "" { roomName = "?" }
+                var buildingName = (lesson.rooms.first?.building.name ?? "")
+                    if buildingName == "" { buildingName = "?" }
+                return lessonType + " в " + roomName + "-" + buildingName
+            }()
         }
     }
     

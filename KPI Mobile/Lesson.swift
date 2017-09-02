@@ -10,7 +10,10 @@ import Foundation
 
 struct Lesson {
     
+    var id: Int
+    var type: LessonType
     var lessonNumber: Int
+    var lessonTime: String
     var discipline: Discipline
     var groups = [Group]()
     var teachers = [Teacher]()

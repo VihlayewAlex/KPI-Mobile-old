@@ -68,17 +68,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="sTk-Gv-uwY" kind="show" identifier="scheduleSegue" id="eYk-2g-Vpu"/>
+                        <segue destination="sTk-Gv-uwY" kind="show" identifier="mainNavigationSegue" id="eYk-2g-Vpu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOd-GX-99U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-737" y="37"/>
         </scene>
-        <!--Schedule-->
+        <!--MainNavigation-->
         <scene sceneID="1qg-xw-hMb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Schedule" id="sTk-Gv-uwY" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MainNavigation" id="sTk-Gv-uwY" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tR0-xH-di9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-97" y="37"/>

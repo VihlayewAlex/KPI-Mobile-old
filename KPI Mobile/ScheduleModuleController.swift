@@ -29,6 +29,7 @@ class ScheduleModuleController {
     // MARK: - Methods
     
     func loadScheduleForGroup(withID ID: Int) {
+        userInterface?.startLoadingIndicator()
         dataManager?.loadScheduleForGroup(withID: ID, withCompletion: { [weak self] (schedule, error) in
             DispatchQueue.main.async {
                 if let error = error {
@@ -37,6 +38,7 @@ class ScheduleModuleController {
                     self?.schedule = schedule
                     self?.userInterface?.reloadSchedule()
                 }
+                self?.userInterface?.stopLoadingIndicator()
             }
         })
     }

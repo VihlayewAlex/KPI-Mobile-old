@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bw4-TU-Au3">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Schedule View Controller-->
+        <!--Schedule-->
         <scene sceneID="WrN-ag-eL2">
             <objects>
                 <viewController id="Bw4-TU-Au3" customClass="ScheduleViewController" customModule="KPI_Mobile" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,19 +19,19 @@
                         <viewControllerLayoutGuide type="bottom" id="UOA-P9-CLv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="veQ-dW-Xg5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="88" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1hu-Bu-NiW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="lessonCell" rowHeight="88" id="vo9-6s-fdn" customClass="LessonTableViewCell" customModule="KPI_Mobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55" width="414" height="88"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vo9-6s-fdn" id="rUs-nJ-V9g">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRf-nl-zrm">
@@ -45,7 +45,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Lesson name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmm-89-pk0">
-                                                    <rect key="frame" x="33" y="8" width="287" height="21"/>
+                                                    <rect key="frame" x="33" y="8" width="248" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Bpl-aE-Cim"/>
                                                     </constraints>
@@ -54,14 +54,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure Indicator" translatesAutoresizingMaskIntoConstraints="NO" id="mKC-yv-RBD">
-                                                    <rect key="frame" x="389" y="8" width="21" height="21"/>
+                                                    <rect key="frame" x="350" y="8" width="21" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="21" id="FFV-GQ-D8K"/>
                                                         <constraint firstAttribute="height" constant="21" id="nvA-ac-hd1"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="10:52 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyP-M1-Oee">
-                                                    <rect key="frame" x="320" y="8" width="69" height="21"/>
+                                                    <rect key="frame" x="281" y="8" width="69" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="y65-1K-6ah"/>
                                                     </constraints>
@@ -70,7 +70,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jt-pg-BJT">
-                                                    <rect key="frame" x="33" y="33.666666666666664" width="105.66666666666666" height="21"/>
+                                                    <rect key="frame" x="33" y="33.5" width="105.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="BqS-6k-DVM"/>
                                                     </constraints>
@@ -125,6 +125,10 @@
                             <constraint firstAttribute="trailing" secondItem="1hu-Bu-NiW" secondAttribute="trailing" id="m4k-uV-1Vv"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" selectedImage="scheduleFilled" id="ZEM-xq-GRi"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="i5h-vM-agF"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="scheduleTableView" destination="1hu-Bu-NiW" id="pb2-Ci-Y2T"/>
                     </connections>
@@ -136,5 +140,7 @@
     </scenes>
     <resources>
         <image name="Disclosure Indicator" width="8" height="12"/>
+        <image name="schedule" width="50" height="50"/>
+        <image name="scheduleFilled" width="50" height="50"/>
     </resources>
 </document>

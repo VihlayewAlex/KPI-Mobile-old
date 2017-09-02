@@ -12,7 +12,6 @@ class ScheduleModuleDataManager {
     
     func loadScheduleForGroup(withID ID: Int, withCompletion completion: @escaping ((Schedule?, Error?)->())) {
         ScheduleService.sharedInstance.loadScheduleForGroup(withID: ID) { (schedule, error) in
-            print(schedule, error)
             completion(schedule, error)
         }
     }

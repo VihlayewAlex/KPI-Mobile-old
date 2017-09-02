@@ -20,6 +20,6 @@ class SplashScreenViewController: UIViewController {
         super.viewDidAppear(animated)
         
         
-        performSegue(withIdentifier: "scheduleSegue", sender: nil)
+        performSegue(withIdentifier: "mainNavigationSegue", sender: nil)
     }
 }

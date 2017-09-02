@@ -28,12 +28,15 @@
 		3A1A4A771F560699000FB8DA /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A761F560699000FB8DA /* ScheduleService.swift */; };
 		3A1A4A7A1F56085A000FB8DA /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A791F56085A000FB8DA /* APIServiceError.swift */; };
 		3A1A4A7C1F56091A000FB8DA /* ScheduleJSONSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1A4A7B1F56091A000FB8DA /* ScheduleJSONSerializer.swift */; };
+		3A4317881F592867009ED27A /* MainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4317871F592867009ED27A /* MainNavigation.storyboard */; };
+		3A43178A1F59292E009ED27A /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4317891F59292E009ED27A /* MainNavigationViewController.swift */; };
 		3A5FB3D21F463384000B7AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D11F463384000B7AA4 /* AppDelegate.swift */; };
 		3A5FB3D71F463384000B7AA4 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D51F463384000B7AA4 /* SplashScreen.storyboard */; };
 		3A5FB3DA1F463384000B7AA4 /* KPI_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3D81F463384000B7AA4 /* KPI_Mobile.xcdatamodeld */; };
 		3A5FB3DC1F463384000B7AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3DB1F463384000B7AA4 /* Assets.xcassets */; };
 		3A5FB3DF1F463384000B7AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5FB3DD1F463384000B7AA4 /* LaunchScreen.storyboard */; };
 		3A5FB3F21F46AF96000B7AA4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5FB3F11F46AF96000B7AA4 /* SplashScreenViewController.swift */; };
+		3AC3D9241F5AA60B0067CF5C /* LessonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC3D9231F5AA60B0067CF5C /* LessonType.swift */; };
 		7CCF6B939E561EAB57D97BEC /* Pods_KPI_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A4FFAE569CA6838DD8070A /* Pods_KPI_Mobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,8 @@
 		3A1A4A761F560699000FB8DA /* ScheduleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 		3A1A4A791F56085A000FB8DA /* APIServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
 		3A1A4A7B1F56091A000FB8DA /* ScheduleJSONSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleJSONSerializer.swift; sourceTree = "<group>"; };
+		3A4317871F592867009ED27A /* MainNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainNavigation.storyboard; sourceTree = "<group>"; };
+		3A4317891F59292E009ED27A /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		3A5FB3CE1F463384000B7AA4 /* KPI Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KPI Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5FB3D11F463384000B7AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A5FB3D61F463384000B7AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 		3A5FB3DE1F463384000B7AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5FB3E01F463384000B7AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5FB3F11F46AF96000B7AA4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		3AC3D9231F5AA60B0067CF5C /* LessonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonType.swift; sourceTree = "<group>"; };
 		64A4FFAE569CA6838DD8070A /* Pods_KPI_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40433E95DB62955C99A3194 /* Pods-KPI Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		EB45938829FC58728A73499C /* Pods-KPI Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KPI Mobile/Pods-KPI Mobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				3A1A4A631F55F76D000FB8DA /* Lesson.swift */,
+				3AC3D9231F5AA60B0067CF5C /* LessonType.swift */,
 				3A1A4A651F55F80A000FB8DA /* Discipline.swift */,
 				3A1A4A671F55F877000FB8DA /* Group.swift */,
 				3A1A4A691F55F8C1000FB8DA /* Teacher.swift */,
@@ -163,6 +170,39 @@
 				3A1A4A791F56085A000FB8DA /* APIServiceError.swift */,
 			);
 			name = Errors;
+			sourceTree = "<group>";
+		};
+		3A4317831F59281C009ED27A /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				3A4317841F59283C009ED27A /* Model */,
+				3A4317851F592842009ED27A /* View */,
+				3A4317861F592848009ED27A /* Controller */,
+			);
+			name = MainNavigation;
+			sourceTree = "<group>";
+		};
+		3A4317841F59283C009ED27A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3A4317851F592842009ED27A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A4317891F59292E009ED27A /* MainNavigationViewController.swift */,
+				3A4317871F592867009ED27A /* MainNavigation.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3A4317861F592848009ED27A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		3A5FB3C51F463384000B7AA4 = {
@@ -236,7 +276,9 @@
 			children = (
 				3A5FB3EC1F4643BB000B7AA4 /* LaunchScreen */,
 				3A5FB3EB1F4643A9000B7AA4 /* SplashScreen */,
+				3A4317831F59281C009ED27A /* MainNavigation */,
 				3A1A4A4B1F55DFBB000FB8DA /* Schedule */,
+				3AC3D9251F5AAAE00067CF5C /* Settings */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -256,6 +298,37 @@
 				3A5FB3DD1F463384000B7AA4 /* LaunchScreen.storyboard */,
 			);
 			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		3AC3D9251F5AAAE00067CF5C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3D9281F5AAB030067CF5C /* Model */,
+				3AC3D9271F5AAAFD0067CF5C /* View */,
+				3AC3D9261F5AAAF50067CF5C /* Controller */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		3AC3D9261F5AAAF50067CF5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3AC3D9271F5AAAFD0067CF5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3AC3D9281F5AAB030067CF5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		F5C070CBA6F1C90F8EDA278F /* Frameworks */ = {
@@ -333,6 +406,7 @@
 				3A5FB3DC1F463384000B7AA4 /* Assets.xcassets in Resources */,
 				3A5FB3D71F463384000B7AA4 /* SplashScreen.storyboard in Resources */,
 				3A1A4A4D1F55DFE6000FB8DA /* Schedule.storyboard in Resources */,
+				3A4317881F592867009ED27A /* MainNavigation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +484,7 @@
 				3A1A4A6E1F55FD28000FB8DA /* Building.swift in Sources */,
 				3A1A4A6A1F55F8C1000FB8DA /* Teacher.swift in Sources */,
 				3A1A4A661F55F80A000FB8DA /* Discipline.swift in Sources */,
+				3A43178A1F59292E009ED27A /* MainNavigationViewController.swift in Sources */,
 				3A1A4A681F55F877000FB8DA /* Group.swift in Sources */,
 				3A5FB3D21F463384000B7AA4 /* AppDelegate.swift in Sources */,
 				3A5FB3F21F46AF96000B7AA4 /* SplashScreenViewController.swift in Sources */,
@@ -420,6 +495,7 @@
 				3A1A4A741F56055A000FB8DA /* Schedule.swift in Sources */,
 				3A1A4A5A1F55EA81000FB8DA /* ScheduleViewProtocol.swift in Sources */,
 				3A1A4A7A1F56085A000FB8DA /* APIServiceError.swift in Sources */,
+				3AC3D9241F5AA60B0067CF5C /* LessonType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@ import UIKit
 
 protocol ScheduleViewProtocol {
     
+    func startLoadingIndicator()
+    func stopLoadingIndicator()
     func reloadSchedule()
     
 }
